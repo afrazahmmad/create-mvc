@@ -53,9 +53,6 @@ class CreateMVCCommand extends Command
                 break;
         }
     }
-
-    
-
 /*
 |--------------------------------------------------------------------------
 | Create all at once with single name
@@ -64,15 +61,11 @@ class CreateMVCCommand extends Command
 | Create Model, controller, request and migration with single input
 |
 */
-
-
-    protected function createAll($name) {
+    protected function createAll($name) 
+    {
         $this->call('make:model', ['name' => "{$name}",'-c' => true,'-m' => true, '-r' => true]);
         $this->makeRequest($name);
     }
-
-    
-
 /*
 |--------------------------------------------------------------------------
 | Create with user choice
@@ -89,7 +82,8 @@ class CreateMVCCommand extends Command
         $this->makeMigrationWithName();
     }
 
-    protected function makeModelWithName() {
+    protected function makeModelWithName() 
+    {
         $data['makeModel'] = $this->confirm('Do you want to create Model ?',true);
         if($data['makeModel']){
             $data['model'] = $this->ask('Enter Model Name. e.g. folder/model name or just model name');
@@ -102,7 +96,8 @@ class CreateMVCCommand extends Command
             }
     }
 
-    protected function makeControllerWithName() {
+    protected function makeControllerWithName() 
+    {
         $data['makeController'] = $this->confirm('Do you want to create controller ?',true);
         if($data['makeController']){
             $data['controller'] = $this->ask('Enter controller Name. e.g. folder/controller name or just controller name');
@@ -113,7 +108,8 @@ class CreateMVCCommand extends Command
             $this->error('Ok! No controller was created');
         }
     }
-    protected function makeRequestWithName() {
+    protected function makeRequestWithName() 
+    {
         $data['makeRequest'] = $this->confirm('Do you want to create request ?',true);
         if($data['makeRequest']){
             $data['request'] = $this->ask('Enter request Name. e.g. folder/request name or just request name');
@@ -124,7 +120,8 @@ class CreateMVCCommand extends Command
             $this->error('Ok! No request was created');
         }
     }
-    protected function makeMigrationWithName() {
+    protected function makeMigrationWithName() 
+    {
         $data['makeMigration'] = $this->confirm('Do you want to create migration ?',true);
         if($data['makeMigration']){
             $data['migration'] = $this->ask('Enter migration Name. e.g. folder/migration name or just migration name');
@@ -146,11 +143,13 @@ class CreateMVCCommand extends Command
     */
 
 
-    protected function makeModel($model) {
+    protected function makeModel($model) 
+    {
         $this->call('make:model', ['name' => "{$model}"]);
     }
 
-    protected function makeController($controller) {
+    protected function makeController($controller) 
+    {
         $controller = Str::studly(class_basename($controller));
 
         $modelName = $this->qualifyClass($this->getNameInput());
@@ -162,11 +161,13 @@ class CreateMVCCommand extends Command
         
     }
 
-    protected function makeRequest($request) {
+    protected function makeRequest($request) 
+    {
         $this->call('make:request', ['name' => "{$request}Request"]); 
     }
 
-    protected function makeMigration($migration) {
+    protected function makeMigration($migration) 
+    {
         $table = Str::plural(Str::snake(class_basename($migration)));
         $this->call('make:migration', [
             'name' => "create_{$table}_table",
