@@ -1,6 +1,12 @@
 {
     "name": "afrazahmad/create-mvc",
     "description": "Create Model, Controller, Request, Migration and Routes.",
+    "keywords": [
+        "afrazahmad",
+        "laravel-create-mvc-package",
+        "model-controller-request-migration"
+    ],
+    "homepage": "https://github.com/afrazahmmad/create-mvc",
     "license": "MIT",
     "authors": [
         {
