@@ -1,0 +1,25 @@
+# Laravel 5 package to create MVC.
+Laravel 5 Package to create model, controller, request and migration.
+## Install through composer
+
+``` bash
+composer require afrazahmad/create-mvc
+```
+
+## Usage
+
+To use this package, just run below command and all cached data will be cleared automatically.
+ 
+``` bash
+php artisan create:mvc
+```
+
+## Requirements
+
+This package requires PHP 7 and Laravel 5.5 or higher.
+
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
