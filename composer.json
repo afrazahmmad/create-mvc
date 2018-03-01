@@ -1,6 +1,6 @@
 {
     "name": "afrazahmad/create-mvc",
-    "description": "Create Model, Controller, Request, Migration and Routes.",
+    "description": "Create Model, Controller, Request and Migration.",
     "keywords": [
         "afrazahmad",
         "laravel-create-mvc-package",
