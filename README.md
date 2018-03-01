@@ -12,7 +12,7 @@ composer require afrazahmad/create-mvc
 
 ## Usage
 
-To use this package, just run below command and you will prompted to options where you can choose according to requirement.
+To use this package, just run below command and you will be prompted to options where you can choose according to requirement.
  
 ``` bash
 php artisan create:mvc
