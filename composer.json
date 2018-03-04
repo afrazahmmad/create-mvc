@@ -3,8 +3,11 @@
     "description": "Create Model, Controller, Request and Migration.",
     "keywords": [
         "afrazahmad",
-        "laravel-create-mvc-package",
-        "model-controller-request-migration",
+        "laravel-package-create-mvc",
+        "model",
+        "controller",
+        "request",
+        "migration",
         "laravel-package"
     ],
     "homepage": "https://github.com/afrazahmmad/create-mvc",

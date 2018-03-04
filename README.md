@@ -1,5 +1,5 @@
 # Laravel 5 package to create MVC.
-Laravel 5 Package to create model, controller, request and migration.
+Laravel 5 Package to create model, controller, request and migration in single command.
 ## Requirements
 
 This package requires PHP 7 and Laravel 5.4 or higher.
