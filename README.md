@@ -2,14 +2,18 @@
 Laravel 5 Package to create model, controller, request and migration.
 ## Requirements
 
-This package requires PHP 7 and Laravel 5.5 or higher.
+This package requires PHP 7 and Laravel 5.4 or higher.
 
 ## Install through composer
 
 ``` bash
 composer require afrazahmad/create-mvc
 ```
+If you don't use auto-discovery, add the ServiceProvider to the providers array in config/app.php
 
+```php
+AfrazAhmad\MVC\MVCServiceProvider::class,
+```
 ## Usage
 
 To use this package, just run below command and you will be prompted to options where you can choose according to requirement.
