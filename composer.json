@@ -4,7 +4,8 @@
     "keywords": [
         "afrazahmad",
         "laravel-create-mvc-package",
-        "model-controller-request-migration"
+        "model-controller-request-migration",
+        "laravel-package"
     ],
     "homepage": "https://github.com/afrazahmmad/create-mvc",
     "license": "MIT",
