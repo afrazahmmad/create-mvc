@@ -151,12 +151,10 @@ class CreateMVCCommand extends Command
     protected function makeController($controller) 
     {
         $controller = Str::studly(class_basename($controller));
-
-        $modelName = $this->qualifyClass($this->getNameInput());
-
         $this->call('make:controller', [
             'name' => "{$controller}Controller",
-            '--model' => $this->option('resource') ? $modelName : null,
+            '-r',
+            '--model' => $controller,
         ]);
         
     }
